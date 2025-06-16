@@ -17,6 +17,13 @@ running `powerprofilesctl set performance`, or via GNOME shell:
 
 ![screenshot](https://github.com/user-attachments/assets/d7382465-a156-4d30-aebd-bf5280214d77)
 
+The APU's wattage will self-regulate to maintain a stable <=100°C under full load. If k10temp is
+hitting 101°C repeatedly, your setup lacks the airflow to max out your machine. Ensure that the air
+vents are far enough away from the table. If you only use external monitors and the laptop is always
+closed, flip it upside down to expose the air vents upwards. If you can't, or don't want to, you can
+lower the power limits
+[here](https://github.com/AlxHnr/amd-ryzen-ignore-stapm/blob/f9ffee17f6e2f84ab763795b3462b8aa9498703e/amd-ryzen-ignore-stapm.sh#L64-L66).
+
 **Note**: The chassis will warm up under full load around the WASD keys. It may not feel very hot,
 but after a few hours your fingertips will feel sore. Use an external keyboard for gaming.
 
